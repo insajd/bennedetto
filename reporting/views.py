@@ -23,6 +23,8 @@ class ReportViewSet(ViewSet):
         return Response({'today': transactions.today().total(),
                          'week': transactions.last_week().total(),
                          'weekExpense': transactions.last_week().total_expense(),
+                         'weekRate': transactions.last_week().total_rate(),
                          'month': transactions.last_month().total(),
                          'monthExpense': transactions.last_month().total_expense(),
+                         'monthRate': transactions.last_month().total_rate(),
                          'year': transactions.last_year().total()})

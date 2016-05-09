@@ -26,5 +26,14 @@
       <td><strong>This Month</strong></td>
       <td ng-bind="summaryTableCtrl.summary.monthExpense | currency"></td>
     </tr>
+    <tr><td><u>RATE</u></td><td></td></tr>
+    <tr>
+      <td><strong>This Week</strong></td>
+      <td ng-bind="summaryTableCtrl.summary.weekRate | currency"></td>
+    </tr>
+    <tr>
+      <td><strong>This Month</strong></td>
+      <td ng-bind="summaryTableCtrl.summary.monthRate | currency"></td>
+    </tr>
   </tbody>
 </table>
